@@ -1,0 +1,10 @@
+[Unit]
+Description=influx bmp085
+
+[Service]
+ExecStart=/usr/local/bin/influx-bmp085.py
+Type=simple
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
